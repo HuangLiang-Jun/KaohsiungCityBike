@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E47F8D11EE219ADB56D6E55 /* Pods_twBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A78A71FD339F18DB2F7B348 /* Pods_twBike.framework */; };
+		632B74F71D76D59F00D93688 /* newbike.png in Resources */ = {isa = PBXBuildFile; fileRef = 632B74F61D76D59F00D93688 /* newbike.png */; };
+		632B75691D7AD00C00D93688 /* Ann.png in Resources */ = {isa = PBXBuildFile; fileRef = 632B75681D7AD00C00D93688 /* Ann.png */; };
+		632C0D191DA7C3C100463D92 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632C0D181DA7C3C100463D92 /* NotificationCenter.framework */; };
+		632C0D1D1DA7C3C100463D92 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632C0D1C1DA7C3C100463D92 /* TodayViewController.m */; };
+		632C0D201DA7C3C100463D92 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632C0D1E1DA7C3C100463D92 /* MainInterface.storyboard */; };
+		632C0D241DA7C3C100463D92 /* myTempMap.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 632C0D171DA7C3C100463D92 /* myTempMap.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		636E90AC1D5B79F4000A1D02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E90AB1D5B79F4000A1D02 /* main.m */; };
+		636E90AF1D5B79F4000A1D02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E90AE1D5B79F4000A1D02 /* AppDelegate.m */; };
+		636E90B21D5B79F4000A1D02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E90B11D5B79F4000A1D02 /* ViewController.m */; };
+		636E90B51D5B79F4000A1D02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636E90B31D5B79F4000A1D02 /* Main.storyboard */; };
+		636E90B71D5B79F4000A1D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636E90B61D5B79F4000A1D02 /* Assets.xcassets */; };
+		636E90C21D5B7A1D000A1D02 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636E90C11D5B7A1D000A1D02 /* MapKit.framework */; };
+		636E90C41D5B7A34000A1D02 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636E90C31D5B7A34000A1D02 /* CoreLocation.framework */; };
+		636E91471D5ED424000A1D02 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E91461D5ED424000A1D02 /* Reachability.m */; };
+		636E91491D5ED43B000A1D02 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636E91481D5ED43B000A1D02 /* SystemConfiguration.framework */; };
+		636E91501D5F3971000A1D02 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636E914F1D5F3971000A1D02 /* MessageUI.framework */; };
+		636E91881D60611C000A1D02 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E91871D60611C000A1D02 /* TableViewController.m */; };
+		6384E2E81DEE77B800715BCE /* ServerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384E2E71DEE77B800715BCE /* ServerCommunicator.m */; };
+		6384E2EC1DEE8AB800715BCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6384E2EB1DEE8AB800715BCE /* GoogleService-Info.plist */; };
+		6384E2ED1DEE8AB800715BCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6384E2EB1DEE8AB800715BCE /* GoogleService-Info.plist */; };
+		6384E2EE1DEE8D5600715BCE /* BikeInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EC95AE1D6C785A0009B1F7 /* BikeInformation.m */; };
+		6384E2EF1DEE8D5600715BCE /* XMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EC95AB1D6C464E0009B1F7 /* XMLParserDelegate.m */; };
+		6384E2F21DEE915900715BCE /* NSDateNSStringExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384E2F11DEE915900715BCE /* NSDateNSStringExchange.m */; };
+		6384E2F31DEE915900715BCE /* NSDateNSStringExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384E2F11DEE915900715BCE /* NSDateNSStringExchange.m */; };
+		6388B6B31D75A038006BAA97 /* MyLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6388B6B21D75A038006BAA97 /* MyLaunchScreen.storyboard */; };
+		63A14B2C1DEC57C200F6D9B4 /* DetectNetworkStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A14B2B1DEC57C200F6D9B4 /* DetectNetworkStatus.m */; };
+		63B3B6BD1DEFF6F000EE0857 /* WidgetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3B6BC1DEFF6F000EE0857 /* WidgetTableViewCell.m */; };
+		63B3B6C71DEFF90000EE0857 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636E90C31D5B7A34000A1D02 /* CoreLocation.framework */; };
+		63B3B6C81DEFF9F900EE0857 /* ServerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384E2E71DEE77B800715BCE /* ServerCommunicator.m */; };
+		63E9F2E91D7425AD00DB4233 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E9F2E81D7425AD00DB4233 /* DetailViewController.m */; };
+		63E9F2FB1D7429FC00DB4233 /* Annotate.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E9F2F81D7429FC00DB4233 /* Annotate.png */; };
+		63E9F2FC1D7429FC00DB4233 /* Annotate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E9F2F91D7429FC00DB4233 /* Annotate@2x.png */; };
+		63E9F2FD1D7429FC00DB4233 /* Annotate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E9F2FA1D7429FC00DB4233 /* Annotate@3x.png */; };
+		63E9F3071D7461BC00DB4233 /* center.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E9F3061D7461BC00DB4233 /* center.png */; };
+		63E9F3341D755E1300DB4233 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E9F3331D755E1300DB4233 /* GoogleMobileAds.framework */; };
+		63EC95AC1D6C464E0009B1F7 /* XMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EC95AB1D6C464E0009B1F7 /* XMLParserDelegate.m */; };
+		63EC95AF1D6C785A0009B1F7 /* BikeInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EC95AE1D6C785A0009B1F7 /* BikeInformation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6384E2F41DEE952100715BCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 636E909F1D5B79F3000A1D02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 632C0D161DA7C3C100463D92;
+			remoteInfo = myTempMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		632C0D281DA7C3C100463D92 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				632C0D241DA7C3C100463D92 /* myTempMap.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0350CB95C46471201E07C1EF /* Pods-twBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twBike.release.xcconfig"; path = "Pods/Target Support Files/Pods-twBike/Pods-twBike.release.xcconfig"; sourceTree = "<group>"; };
+		4C1C2249F1DC6CD585BD0614 /* Pods-twBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twBike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-twBike/Pods-twBike.debug.xcconfig"; sourceTree = "<group>"; };
+		632B74F61D76D59F00D93688 /* newbike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newbike.png; sourceTree = "<group>"; };
+		632B75681D7AD00C00D93688 /* Ann.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ann.png; sourceTree = "<group>"; };
+		632C0D171DA7C3C100463D92 /* myTempMap.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = myTempMap.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		632C0D181DA7C3C100463D92 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		632C0D1B1DA7C3C100463D92 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		632C0D1C1DA7C3C100463D92 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		632C0D1F1DA7C3C100463D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		632C0D211DA7C3C100463D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		636E90A71D5B79F4000A1D02 /* twBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		636E90AB1D5B79F4000A1D02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		636E90AD1D5B79F4000A1D02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		636E90AE1D5B79F4000A1D02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		636E90B01D5B79F4000A1D02 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		636E90B11D5B79F4000A1D02 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		636E90B41D5B79F4000A1D02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		636E90B61D5B79F4000A1D02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		636E90BB1D5B79F4000A1D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		636E90C11D5B7A1D000A1D02 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		636E90C31D5B7A34000A1D02 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		636E91451D5ED424000A1D02 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		636E91461D5ED424000A1D02 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		636E91481D5ED43B000A1D02 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		636E914F1D5F3971000A1D02 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		636E91861D60611C000A1D02 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
+		636E91871D60611C000A1D02 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
+		6384E2E61DEE77B800715BCE /* ServerCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerCommunicator.h; sourceTree = "<group>"; };
+		6384E2E71DEE77B800715BCE /* ServerCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerCommunicator.m; sourceTree = "<group>"; };
+		6384E2EB1DEE8AB800715BCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6384E2F01DEE915900715BCE /* NSDateNSStringExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateNSStringExchange.h; sourceTree = "<group>"; };
+		6384E2F11DEE915900715BCE /* NSDateNSStringExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateNSStringExchange.m; sourceTree = "<group>"; };
+		6384E3241DEE954500715BCE /* twBike copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "twBike copy-Info.plist"; path = "/Users/huang/Documents/APP/MyAPP/twBike /twBike copy-Info.plist"; sourceTree = "<absolute>"; };
+		6384E3251DEE977500715BCE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		6388B6B21D75A038006BAA97 /* MyLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MyLaunchScreen.storyboard; path = ../MyLaunchScreen.storyboard; sourceTree = "<group>"; };
+		63A14B2A1DEC57C200F6D9B4 /* DetectNetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetectNetworkStatus.h; sourceTree = "<group>"; };
+		63A14B2B1DEC57C200F6D9B4 /* DetectNetworkStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetectNetworkStatus.m; sourceTree = "<group>"; };
+		63A14B2D1DED474400F6D9B4 /* StatusSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSingleton.h; sourceTree = "<group>"; };
+		63B3B6BB1DEFF6F000EE0857 /* WidgetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetTableViewCell.h; sourceTree = "<group>"; };
+		63B3B6BC1DEFF6F000EE0857 /* WidgetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetTableViewCell.m; sourceTree = "<group>"; };
+		63E9F2E71D7425AD00DB4233 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		63E9F2E81D7425AD00DB4233 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		63E9F2F81D7429FC00DB4233 /* Annotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Annotate.png; sourceTree = "<group>"; };
+		63E9F2F91D7429FC00DB4233 /* Annotate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Annotate@2x.png"; sourceTree = "<group>"; };
+		63E9F2FA1D7429FC00DB4233 /* Annotate@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Annotate@3x.png"; sourceTree = "<group>"; };
+		63E9F3061D7461BC00DB4233 /* center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = center.png; sourceTree = "<group>"; };
+		63E9F3331D755E1300DB4233 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		63EC95AA1D6C464E0009B1F7 /* XMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParserDelegate.h; sourceTree = "<group>"; };
+		63EC95AB1D6C464E0009B1F7 /* XMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParserDelegate.m; sourceTree = "<group>"; };
+		63EC95AD1D6C785A0009B1F7 /* BikeInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeInformation.h; sourceTree = "<group>"; };
+		63EC95AE1D6C785A0009B1F7 /* BikeInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BikeInformation.m; sourceTree = "<group>"; };
+		7A78A71FD339F18DB2F7B348 /* Pods_twBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_twBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		632C0D141DA7C3C100463D92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B3B6C71DEFF90000EE0857 /* CoreLocation.framework in Frameworks */,
+				632C0D191DA7C3C100463D92 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636E90A41D5B79F3000A1D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636E91501D5F3971000A1D02 /* MessageUI.framework in Frameworks */,
+				636E91491D5ED43B000A1D02 /* SystemConfiguration.framework in Frameworks */,
+				63E9F3341D755E1300DB4233 /* GoogleMobileAds.framework in Frameworks */,
+				636E90C41D5B7A34000A1D02 /* CoreLocation.framework in Frameworks */,
+				636E90C21D5B7A1D000A1D02 /* MapKit.framework in Frameworks */,
+				0E47F8D11EE219ADB56D6E55 /* Pods_twBike.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B4324BFF021493FE2530B3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6384E3251DEE977500715BCE /* Accelerate.framework */,
+				63E9F3331D755E1300DB4233 /* GoogleMobileAds.framework */,
+				636E914F1D5F3971000A1D02 /* MessageUI.framework */,
+				636E91481D5ED43B000A1D02 /* SystemConfiguration.framework */,
+				636E90C31D5B7A34000A1D02 /* CoreLocation.framework */,
+				636E90C11D5B7A1D000A1D02 /* MapKit.framework */,
+				7A78A71FD339F18DB2F7B348 /* Pods_twBike.framework */,
+				632C0D181DA7C3C100463D92 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		632C0D1A1DA7C3C100463D92 /* myTempMap */ = {
+			isa = PBXGroup;
+			children = (
+				632C0D1B1DA7C3C100463D92 /* TodayViewController.h */,
+				632C0D1C1DA7C3C100463D92 /* TodayViewController.m */,
+				63B3B6BB1DEFF6F000EE0857 /* WidgetTableViewCell.h */,
+				63B3B6BC1DEFF6F000EE0857 /* WidgetTableViewCell.m */,
+				632C0D1E1DA7C3C100463D92 /* MainInterface.storyboard */,
+				632C0D211DA7C3C100463D92 /* Info.plist */,
+			);
+			path = myTempMap;
+			sourceTree = "<group>";
+		};
+		632C0D291DAA854100463D92 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				632B74F61D76D59F00D93688 /* newbike.png */,
+				63E9F3061D7461BC00DB4233 /* center.png */,
+				63E9F2F81D7429FC00DB4233 /* Annotate.png */,
+				632B75681D7AD00C00D93688 /* Ann.png */,
+				63E9F2F91D7429FC00DB4233 /* Annotate@2x.png */,
+				63E9F2FA1D7429FC00DB4233 /* Annotate@3x.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		636E909E1D5B79F3000A1D02 = {
+			isa = PBXGroup;
+			children = (
+				636E90A91D5B79F4000A1D02 /* twBike */,
+				632C0D1A1DA7C3C100463D92 /* myTempMap */,
+				636E90A81D5B79F4000A1D02 /* Products */,
+				7993E17948DE6299F1911CCC /* Pods */,
+				4B4324BFF021493FE2530B3B /* Frameworks */,
+				6384E3241DEE954500715BCE /* twBike copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		636E90A81D5B79F4000A1D02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				636E90A71D5B79F4000A1D02 /* twBike.app */,
+				632C0D171DA7C3C100463D92 /* myTempMap.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		636E90A91D5B79F4000A1D02 /* twBike */ = {
+			isa = PBXGroup;
+			children = (
+				637C329F1E5D4EB7004B675B /* View */,
+				63E065751DAA939900B67B08 /* Controller */,
+				63E065741DAA936F00B67B08 /* Model */,
+				636E90AA1D5B79F4000A1D02 /* Supporting Files */,
+			);
+			path = twBike;
+			sourceTree = "<group>";
+		};
+		636E90AA1D5B79F4000A1D02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				636E90AD1D5B79F4000A1D02 /* AppDelegate.h */,
+				636E90AE1D5B79F4000A1D02 /* AppDelegate.m */,
+				6384E2EB1DEE8AB800715BCE /* GoogleService-Info.plist */,
+				636E90BB1D5B79F4000A1D02 /* Info.plist */,
+				632C0D291DAA854100463D92 /* Image */,
+				636E90B61D5B79F4000A1D02 /* Assets.xcassets */,
+				636E90AB1D5B79F4000A1D02 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		637C329F1E5D4EB7004B675B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				636E90B31D5B79F4000A1D02 /* Main.storyboard */,
+				6388B6B21D75A038006BAA97 /* MyLaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		63A14B2E1DED589300F6D9B4 /* NetworkDetect */ = {
+			isa = PBXGroup;
+			children = (
+				63A14B2A1DEC57C200F6D9B4 /* DetectNetworkStatus.h */,
+				63A14B2B1DEC57C200F6D9B4 /* DetectNetworkStatus.m */,
+				636E91451D5ED424000A1D02 /* Reachability.h */,
+				636E91461D5ED424000A1D02 /* Reachability.m */,
+				63A14B2D1DED474400F6D9B4 /* StatusSingleton.h */,
+			);
+			name = NetworkDetect;
+			sourceTree = "<group>";
+		};
+		63E065741DAA936F00B67B08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63A14B2E1DED589300F6D9B4 /* NetworkDetect */,
+				6384E2F01DEE915900715BCE /* NSDateNSStringExchange.h */,
+				6384E2F11DEE915900715BCE /* NSDateNSStringExchange.m */,
+				6384E2E61DEE77B800715BCE /* ServerCommunicator.h */,
+				6384E2E71DEE77B800715BCE /* ServerCommunicator.m */,
+				63EC95AD1D6C785A0009B1F7 /* BikeInformation.h */,
+				63EC95AE1D6C785A0009B1F7 /* BikeInformation.m */,
+				63EC95AA1D6C464E0009B1F7 /* XMLParserDelegate.h */,
+				63EC95AB1D6C464E0009B1F7 /* XMLParserDelegate.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		63E065751DAA939900B67B08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				636E90B01D5B79F4000A1D02 /* ViewController.h */,
+				636E90B11D5B79F4000A1D02 /* ViewController.m */,
+				636E91861D60611C000A1D02 /* TableViewController.h */,
+				636E91871D60611C000A1D02 /* TableViewController.m */,
+				63E9F2E71D7425AD00DB4233 /* DetailViewController.h */,
+				63E9F2E81D7425AD00DB4233 /* DetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7993E17948DE6299F1911CCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C1C2249F1DC6CD585BD0614 /* Pods-twBike.debug.xcconfig */,
+				0350CB95C46471201E07C1EF /* Pods-twBike.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		632C0D161DA7C3C100463D92 /* myTempMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 632C0D271DA7C3C100463D92 /* Build configuration list for PBXNativeTarget "myTempMap" */;
+			buildPhases = (
+				632C0D131DA7C3C100463D92 /* Sources */,
+				632C0D141DA7C3C100463D92 /* Frameworks */,
+				632C0D151DA7C3C100463D92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myTempMap;
+			productName = myTempMap;
+			productReference = 632C0D171DA7C3C100463D92 /* myTempMap.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		636E90A61D5B79F3000A1D02 /* twBike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636E90BE1D5B79F4000A1D02 /* Build configuration list for PBXNativeTarget "twBike" */;
+			buildPhases = (
+				FE180F3A5D54059AA2F5EC94 /* 📦 Check Pods Manifest.lock */,
+				F6B4DEBF51FEC27E580D3DDF /* [CP] Check Pods Manifest.lock */,
+				BD78517DA2D1CB0EEA07F3DB /* [CP] Check Pods Manifest.lock */,
+				636E90A31D5B79F3000A1D02 /* Sources */,
+				636E90A41D5B79F3000A1D02 /* Frameworks */,
+				636E90A51D5B79F3000A1D02 /* Resources */,
+				7C268A56A2CB589389C75F7C /* [CP] Embed Pods Frameworks */,
+				88A669C6FD0CD071AB37746C /* [CP] Copy Pods Resources */,
+				632C0D281DA7C3C100463D92 /* Embed App Extensions */,
+				F58A3FBC9949F9259A0FA24E /* 📦 Embed Pods Frameworks */,
+				5CBD89C85A19FF870D2380F2 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6384E2F51DEE952100715BCE /* PBXTargetDependency */,
+			);
+			name = twBike;
+			productName = twBike;
+			productReference = 636E90A71D5B79F4000A1D02 /* twBike.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		636E909F1D5B79F3000A1D02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Huang;
+				TargetAttributes = {
+					632C0D161DA7C3C100463D92 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2FFS45S3SA;
+						ProvisioningStyle = Automatic;
+					};
+					636E90A61D5B79F3000A1D02 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2FFS45S3SA;
+					};
+				};
+			};
+			buildConfigurationList = 636E90A21D5B79F3000A1D02 /* Build configuration list for PBXProject "twBike" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 636E909E1D5B79F3000A1D02;
+			productRefGroup = 636E90A81D5B79F4000A1D02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				636E90A61D5B79F3000A1D02 /* twBike */,
+				632C0D161DA7C3C100463D92 /* myTempMap */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		632C0D151DA7C3C100463D92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632C0D201DA7C3C100463D92 /* MainInterface.storyboard in Resources */,
+				6384E2ED1DEE8AB800715BCE /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636E90A51D5B79F3000A1D02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E9F2FD1D7429FC00DB4233 /* Annotate@3x.png in Resources */,
+				632B74F71D76D59F00D93688 /* newbike.png in Resources */,
+				63E9F2FC1D7429FC00DB4233 /* Annotate@2x.png in Resources */,
+				632B75691D7AD00C00D93688 /* Ann.png in Resources */,
+				63E9F2FB1D7429FC00DB4233 /* Annotate.png in Resources */,
+				6388B6B31D75A038006BAA97 /* MyLaunchScreen.storyboard in Resources */,
+				636E90B71D5B79F4000A1D02 /* Assets.xcassets in Resources */,
+				6384E2EC1DEE8AB800715BCE /* GoogleService-Info.plist in Resources */,
+				636E90B51D5B79F4000A1D02 /* Main.storyboard in Resources */,
+				63E9F3071D7461BC00DB4233 /* center.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5CBD89C85A19FF870D2380F2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twBike/Pods-twBike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C268A56A2CB589389C75F7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twBike/Pods-twBike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88A669C6FD0CD071AB37746C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twBike/Pods-twBike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD78517DA2D1CB0EEA07F3DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F58A3FBC9949F9259A0FA24E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twBike/Pods-twBike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6B4DEBF51FEC27E580D3DDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE180F3A5D54059AA2F5EC94 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		632C0D131DA7C3C100463D92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B3B6C81DEFF9F900EE0857 /* ServerCommunicator.m in Sources */,
+				6384E2EE1DEE8D5600715BCE /* BikeInformation.m in Sources */,
+				6384E2F31DEE915900715BCE /* NSDateNSStringExchange.m in Sources */,
+				63B3B6BD1DEFF6F000EE0857 /* WidgetTableViewCell.m in Sources */,
+				6384E2EF1DEE8D5600715BCE /* XMLParserDelegate.m in Sources */,
+				632C0D1D1DA7C3C100463D92 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636E90A31D5B79F3000A1D02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636E90B21D5B79F4000A1D02 /* ViewController.m in Sources */,
+				63EC95AF1D6C785A0009B1F7 /* BikeInformation.m in Sources */,
+				6384E2F21DEE915900715BCE /* NSDateNSStringExchange.m in Sources */,
+				636E90AF1D5B79F4000A1D02 /* AppDelegate.m in Sources */,
+				63E9F2E91D7425AD00DB4233 /* DetailViewController.m in Sources */,
+				636E91471D5ED424000A1D02 /* Reachability.m in Sources */,
+				636E91881D60611C000A1D02 /* TableViewController.m in Sources */,
+				636E90AC1D5B79F4000A1D02 /* main.m in Sources */,
+				6384E2E81DEE77B800715BCE /* ServerCommunicator.m in Sources */,
+				63A14B2C1DEC57C200F6D9B4 /* DetectNetworkStatus.m in Sources */,
+				63EC95AC1D6C464E0009B1F7 /* XMLParserDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6384E2F51DEE952100715BCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 632C0D161DA7C3C100463D92 /* myTempMap */;
+			targetProxy = 6384E2F41DEE952100715BCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		632C0D1E1DA7C3C100463D92 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				632C0D1F1DA7C3C100463D92 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		636E90B31D5B79F4000A1D02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				636E90B41D5B79F4000A1D02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		632C0D251DA7C3C100463D92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LiangJun Huang (2FFS45S3SA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2FFS45S3SA;
+				INFOPLIST_FILE = myTempMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiangJunHuang.twBike.myTempMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		632C0D261DA7C3C100463D92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LiangJun Huang (2FFS45S3SA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2FFS45S3SA;
+				INFOPLIST_FILE = myTempMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiangJunHuang.twBike.myTempMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		636E90BC1D5B79F4000A1D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LiangJun Huang (2FFS45S3SA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		636E90BD1D5B79F4000A1D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LiangJun Huang (2FFS45S3SA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		636E90BF1D5B79F4000A1D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C1C2249F1DC6CD585BD0614 /* Pods-twBike.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LiangJun Huang (2FFS45S3SA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = twBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiangJunHuang.twBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		636E90C01D5B79F4000A1D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0350CB95C46471201E07C1EF /* Pods-twBike.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LiangJun Huang (2FFS45S3SA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = twBike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiangJunHuang.twBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		632C0D271DA7C3C100463D92 /* Build configuration list for PBXNativeTarget "myTempMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				632C0D251DA7C3C100463D92 /* Debug */,
+				632C0D261DA7C3C100463D92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		636E90A21D5B79F3000A1D02 /* Build configuration list for PBXProject "twBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636E90BC1D5B79F4000A1D02 /* Debug */,
+				636E90BD1D5B79F4000A1D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		636E90BE1D5B79F4000A1D02 /* Build configuration list for PBXNativeTarget "twBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636E90BF1D5B79F4000A1D02 /* Debug */,
+				636E90C01D5B79F4000A1D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 636E909F1D5B79F3000A1D02 /* Project object */;
+}
