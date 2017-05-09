@@ -17,7 +17,6 @@
 
 
 @property (weak, nonatomic) IBOutlet UILabel *station;
-
 @property (weak, nonatomic) IBOutlet UILabel *bikeNum;
 @property (weak, nonatomic) IBOutlet UILabel *parkNum;
 
@@ -38,23 +37,7 @@
     _parkNum.layer.cornerRadius = 11;
     _parkNum.layer.masksToBounds=TRUE;
     
-    //方法一
-    //Label顯示資訊
-/*    BikeInformation *info = _stationDetail;
-        //顯示文字 站名
-    _station.text = [NSString stringWithFormat:@"%@",info.stationName];
-    
-    //剩餘車輛
-    _bikeNum.text = [NSString stringWithFormat:@" 剩餘車輛:%@",info.stationNums1];
-    //空位
-    _parkNum.text = [NSString stringWithFormat:@" 空位:%@",info.stationNums2];
-    
-    //地圖顯示資訊
-    CLLocationCoordinate2D coor = CLLocationCoordinate2DMake([info.stationLat doubleValue], [info.stationLon doubleValue]);
-*/
-    
-    //方法二
-    //BikeInformation *info = _detailItem;
+
     //顯示文字 站名
     _station.text = [NSString stringWithFormat:@"%@", self.each.stationName];
     //剩餘車輛

@@ -20,6 +20,7 @@
 @interface ViewController ()<MKMapViewDelegate,CLLocationManagerDelegate,MFMailComposeViewControllerDelegate,NetworkConnectionProtocol>
 
 {
+    
     CLLocationManager *locationManager;
     Reachability *serverReach ;
     BikeInformation *info;

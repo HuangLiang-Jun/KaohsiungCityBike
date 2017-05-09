@@ -12,8 +12,6 @@
 @interface DetailViewController : UIViewController
 @property (nonatomic,strong) NSMutableArray *stationDetail;
 
-//方法二
-//@property (strong, nonatomic) id detailItem;
 
 @property (strong, nonatomic) BikeInformation * each;
 
