@@ -11,5 +11,5 @@
 @interface TableViewController : UITableViewController
 
 //給上一頁丟資料進來的容器
-@property (nonatomic,strong) NSMutableArray *bikeDetail;
+@property (nonatomic,weak) NSMutableArray *bikeDetail;
 @end

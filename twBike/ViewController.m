@@ -15,7 +15,7 @@
 #import "XMLParserDelegate.h"
 #import "DetectNetworkStatus.h"
 #import "ServerCommunicator.h"
-
+#import "ProgressManager.h"
 
 @interface ViewController ()<MKMapViewDelegate,CLLocationManagerDelegate,MFMailComposeViewControllerDelegate,NetworkConnectionProtocol>
 
@@ -36,9 +36,11 @@
     DetectNetworkStatus *networkStatus;
     ServerCommunicator *comm;
 }
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [ProgressManager showProgress];
     self.bannerView.adUnitID = @"ca-app-pub-1064357173457983/9184236759";
     //test AD
     //self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
@@ -76,6 +78,7 @@
 #pragma mark - check NetWork &downLoad Data
 //網路狀態改變通知
 -(void)networkConnection{
+    
     [self downLoadList];
 
 }
@@ -84,6 +87,7 @@
     //資料下載
         [comm startToDownloadData:^(NSData *data, NSError *error) {
         if (error) {
+            [ProgressManager dismissProgress];
             NSLog(@"Download Fail: %@",error);
             return;
         }
@@ -97,9 +101,10 @@
         //可以檢驗解出來的格式是否正確 網站-->XML Validate
         if (success) {
             NSLog(@"Parser OK.");
-            self.bikeInfoArr = [parserDelegate getInfo];
+            _bikeInfoArr = [parserDelegate getInfo];
             //如果資料解析ＯＫ 就放大頭針
-            if(_bikeInfoArr){
+            
+            if(_bikeInfoArr.count != 0){
                 for (int i = 0; i<_bikeInfoArr.count; i++) {
                     MKPointAnnotation *annotation = [[MKPointAnnotation alloc]init];
                     info = _bikeInfoArr[i];
@@ -112,7 +117,9 @@
                         [_mainMapView addAnnotation:annotation];
                     });
                 }
+                [ProgressManager dismissProgress];
             }else{
+                [ProgressManager dismissProgress];
                 NSLog(@"Parser Fail.");
             }
         }
@@ -120,6 +127,7 @@
 }
 
 #pragma mark - set custom ann
+
 //加入自定義的大頭針
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
     //檢查如果annotation是userLocation的話就保持原本的預設藍點
@@ -131,7 +139,7 @@
     //抓到的會是一片空白的大頭針
     MKAnnotationView *result =[mapView dequeueReusableAnnotationViewWithIdentifier:reusedID];
     //如果沒有拿到pin就創造一個新的
-    if (result==nil) {
+    if (result == nil) {
         //自訂圖標
         result =[[MKAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:reusedID];
         //如果拿到就放到annotation中
@@ -143,11 +151,9 @@
     UIImage *image = [UIImage imageNamed:@"Annotate.png"];
     result.image = image;
     
-    //加入左邊callout 圖片
+    //infoWindow left image
     result.leftCalloutAccessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed: @"Ann.png"]];
-    //    UIButton *favoriteBtn = [UIButton buttonWithType:UIButtonTypeContactAdd];
-    //    [favoriteBtn addTarget:self action:@selector(addFavoriteStation) forControlEvents:UIControlEventTouchUpInside];
-    //    result.rightCalloutAccessoryView = favoriteBtn;
+
     
     return result;
 }
@@ -155,9 +161,12 @@
 
 
 //點到大頭針可以取得資料
+
 -(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(nonnull MKAnnotationView *)view{
     
 }
+
+
 
 #pragma mark - myLoactionBtn
 //定位按鈕！
@@ -166,6 +175,8 @@
 }
 
 #pragma mark  - about alert & send mail
+
+
 //關於我-->alert
 -(void)aboutMeAlert{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"關於我" message:@"提供高雄市C-Bike站點位置及單車即時資訊。" preferredStyle:UIAlertControllerStyleAlert];
@@ -182,6 +193,8 @@
     //講警告呈現視窗上
     [self presentViewController:alert animated:YES completion:nil];
 }
+
+
 // MFMail DelegateMethod.
 -(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error{
     
@@ -239,9 +252,6 @@
     VC.bikeDetail = self.bikeInfoArr;
     
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end

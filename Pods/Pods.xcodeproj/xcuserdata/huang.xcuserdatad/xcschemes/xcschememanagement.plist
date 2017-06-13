@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>LKAlertController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>Pods-twBike.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -11,9 +21,44 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>04E1F66CA9F5D4E1755858790589F178</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A7484339DC94A42B58021416D18C493</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B300CD55E1EBB6DC773CFA3CDA24EFA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7273A6E79A317718BFE1C8DB5ADAD2BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C36CB2CB977A4E7D954935096D00A1ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA70EE3D45A273D9806E8440A1110E67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>FCD618C49990EDB76ED5E4DAFF7C5B4E</key>
 		<dict>
 			<key>primary</key>

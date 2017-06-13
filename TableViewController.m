@@ -10,25 +10,43 @@
 #import "ViewController.h"
 #import "BikeInformation.h"
 #import "DetailViewController.h"
-@interface TableViewController ()
+
+
+
+@interface TableViewController ()<UISearchBarDelegate>
+
+
 @property (strong, nonatomic) IBOutlet UITableView *tabelView;
-//searchBar
-
-
-
 @property (strong,nonatomic) NSMutableArray *cellArr;
-//for searchBar陣列
-//@property (strong,nonatomic) NSMutableArray *searchList;
+@property (strong,nonatomic) NSMutableArray *searchResults;
+@property (strong, nonatomic) UISearchBar *searchBar;
+
 @end
 
-@implementation TableViewController
-{
+
+
+@implementation TableViewController {
     BikeInformation *info ;
+
+
 }
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title =@"站點列表";
-    //_searchList = [NSMutableArray new];
+    _searchBar = [[UISearchBar alloc]init];
+    _searchBar.delegate = self;
+    _searchBar.showsCancelButton = YES;
+    [self changeSearchCancelButtonToChinese];
+    _searchBar.returnKeyType = UIReturnKeyDone;
+    _searchBar.placeholder = @"請輸入站名或路名";
+    
+    self.navigationItem.titleView = _searchBar;
+
+    _searchResults = [[NSMutableArray alloc]initWithArray:_bikeDetail];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,21 +56,25 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-
-    return 1;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return _bikeDetail.count;
+    if (_searchResults.count == 0) {
+        return 1;
+    }
+    
+    return _searchResults.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    if (_searchResults.count == 0) {
+        cell.textLabel.text = @"沒有資料";
+        cell.detailTextLabel.text = @"";
+        return cell;
+    }
     
-    info = _bikeDetail[indexPath.row];
+    info = _searchResults[indexPath.row];
     NSLog(@"%@",info.stationName);
     
     cell.textLabel.text =info.stationName;
@@ -62,24 +84,89 @@
     return cell;
 }
 
-//點擊cell事件
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    //點擊時的灰色動畫
+    
+    if (_searchResults.count == 0) {
+        return;
+    }
+    
+    if (_searchBar.isFirstResponder) [_searchBar resignFirstResponder];
+    
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    //傳值給detailVC
     DetailViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailViewController"];
+
     
-    //方法一
-    // detailVC.stationDetail = _bikeDetail[indexPath.row];
-    
-    detailVC.each = _bikeDetail[indexPath.row];
+    detailVC.each = _searchResults[indexPath.row];
     
     [self showViewController:detailVC sender:nil];
-    //NSLog(@"列印列印%@",_bikeDetail[indexPath.row]);
+    
 
 }
 
-#pragma search bar
+#pragma mark - search bar delegate
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    
+    [_searchResults removeAllObjects];
+    
+    if ([searchText isEqualToString:@""]) {
+        [_searchResults addObjectsFromArray:_bikeDetail];
+        
+    } else {
+    
+        for (int i = 0 ; i < _bikeDetail.count; i++) {
+            
+            BikeInformation *tmp = _bikeDetail[i];
+            if ([tmp.stationName.lowercaseString rangeOfString:searchText].length != 0 || [tmp.stationAddress.lowercaseString rangeOfString:searchText].length != 0) {
+                [_searchResults addObject:tmp];
+                
+            }
+        }
+    }
+    
+    [_tabelView reloadData];
+
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+
+    NSLog(@"search bar clicked cancel.");
+    
+    [_searchResults removeAllObjects];
+    [_searchResults addObjectsFromArray:_bikeDetail];
+    [_tabelView reloadData];
+    [searchBar endEditing:true];
+    searchBar.text = @"";
+}
+
+-(void) searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    
+    [searchBar resignFirstResponder];
+
+
+}
+
+-(void) changeSearchCancelButtonToChinese {
+
+    for (UIView *view in _searchBar.subviews)
+    {
+        for (id subview in view.subviews)
+        {
+            if ( [subview isKindOfClass:[UIButton class]] )
+            {
+                
+                UIButton *cancelButton = (UIButton*)subview;
+                [cancelButton setTitle:@"取消" forState:UIControlStateNormal];
+                return;
+            }
+        }
+    }
+
+}
+
 
 
 @end
+

@@ -7,7 +7,8 @@ target 'twBike' do
    use_frameworks!
 
   # Pods for twBike
-pod 'Firebase'
-pod 'Firebase/Database'
+
+pod 'SVProgressHUD'
+
 
 end

@@ -26,8 +26,6 @@
 		636E91501D5F3971000A1D02 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636E914F1D5F3971000A1D02 /* MessageUI.framework */; };
 		636E91881D60611C000A1D02 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E91871D60611C000A1D02 /* TableViewController.m */; };
 		6384E2E81DEE77B800715BCE /* ServerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384E2E71DEE77B800715BCE /* ServerCommunicator.m */; };
-		6384E2EC1DEE8AB800715BCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6384E2EB1DEE8AB800715BCE /* GoogleService-Info.plist */; };
-		6384E2ED1DEE8AB800715BCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6384E2EB1DEE8AB800715BCE /* GoogleService-Info.plist */; };
 		6384E2EE1DEE8D5600715BCE /* BikeInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EC95AE1D6C785A0009B1F7 /* BikeInformation.m */; };
 		6384E2EF1DEE8D5600715BCE /* XMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EC95AB1D6C464E0009B1F7 /* XMLParserDelegate.m */; };
 		6384E2F21DEE915900715BCE /* NSDateNSStringExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384E2F11DEE915900715BCE /* NSDateNSStringExchange.m */; };
@@ -37,6 +35,7 @@
 		63B3B6BD1DEFF6F000EE0857 /* WidgetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B3B6BC1DEFF6F000EE0857 /* WidgetTableViewCell.m */; };
 		63B3B6C71DEFF90000EE0857 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636E90C31D5B7A34000A1D02 /* CoreLocation.framework */; };
 		63B3B6C81DEFF9F900EE0857 /* ServerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384E2E71DEE77B800715BCE /* ServerCommunicator.m */; };
+		63BB4D6A1EED7B7100D670DD /* ProgressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63BB4D691EED7B7100D670DD /* ProgressManager.m */; };
 		63E9F2E91D7425AD00DB4233 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E9F2E81D7425AD00DB4233 /* DetailViewController.m */; };
 		63E9F2FB1D7429FC00DB4233 /* Annotate.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E9F2F81D7429FC00DB4233 /* Annotate.png */; };
 		63E9F2FC1D7429FC00DB4233 /* Annotate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63E9F2F91D7429FC00DB4233 /* Annotate@2x.png */; };
@@ -101,7 +100,6 @@
 		636E91871D60611C000A1D02 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
 		6384E2E61DEE77B800715BCE /* ServerCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerCommunicator.h; sourceTree = "<group>"; };
 		6384E2E71DEE77B800715BCE /* ServerCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerCommunicator.m; sourceTree = "<group>"; };
-		6384E2EB1DEE8AB800715BCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6384E2F01DEE915900715BCE /* NSDateNSStringExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateNSStringExchange.h; sourceTree = "<group>"; };
 		6384E2F11DEE915900715BCE /* NSDateNSStringExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateNSStringExchange.m; sourceTree = "<group>"; };
 		6384E3241DEE954500715BCE /* twBike copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "twBike copy-Info.plist"; path = "/Users/huang/Documents/APP/MyAPP/twBike /twBike copy-Info.plist"; sourceTree = "<absolute>"; };
@@ -112,6 +110,8 @@
 		63A14B2D1DED474400F6D9B4 /* StatusSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusSingleton.h; sourceTree = "<group>"; };
 		63B3B6BB1DEFF6F000EE0857 /* WidgetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetTableViewCell.h; sourceTree = "<group>"; };
 		63B3B6BC1DEFF6F000EE0857 /* WidgetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetTableViewCell.m; sourceTree = "<group>"; };
+		63BB4D681EED7B7100D670DD /* ProgressManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressManager.h; sourceTree = "<group>"; };
+		63BB4D691EED7B7100D670DD /* ProgressManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressManager.m; sourceTree = "<group>"; };
 		63E9F2E71D7425AD00DB4233 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		63E9F2E81D7425AD00DB4233 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		63E9F2F81D7429FC00DB4233 /* Annotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Annotate.png; sourceTree = "<group>"; };
@@ -230,7 +230,6 @@
 			children = (
 				636E90AD1D5B79F4000A1D02 /* AppDelegate.h */,
 				636E90AE1D5B79F4000A1D02 /* AppDelegate.m */,
-				6384E2EB1DEE8AB800715BCE /* GoogleService-Info.plist */,
 				636E90BB1D5B79F4000A1D02 /* Info.plist */,
 				632C0D291DAA854100463D92 /* Image */,
 				636E90B61D5B79F4000A1D02 /* Assets.xcassets */,
@@ -272,6 +271,8 @@
 				63EC95AE1D6C785A0009B1F7 /* BikeInformation.m */,
 				63EC95AA1D6C464E0009B1F7 /* XMLParserDelegate.h */,
 				63EC95AB1D6C464E0009B1F7 /* XMLParserDelegate.m */,
+				63BB4D681EED7B7100D670DD /* ProgressManager.h */,
+				63BB4D691EED7B7100D670DD /* ProgressManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -322,7 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 636E90BE1D5B79F4000A1D02 /* Build configuration list for PBXNativeTarget "twBike" */;
 			buildPhases = (
-				FE180F3A5D54059AA2F5EC94 /* 📦 Check Pods Manifest.lock */,
+				FE180F3A5D54059AA2F5EC94 /* [CP] Check Pods Manifest.lock */,
 				F6B4DEBF51FEC27E580D3DDF /* [CP] Check Pods Manifest.lock */,
 				BD78517DA2D1CB0EEA07F3DB /* [CP] Check Pods Manifest.lock */,
 				636E90A31D5B79F3000A1D02 /* Sources */,
@@ -389,7 +390,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				632C0D201DA7C3C100463D92 /* MainInterface.storyboard in Resources */,
-				6384E2ED1DEE8AB800715BCE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +404,6 @@
 				63E9F2FB1D7429FC00DB4233 /* Annotate.png in Resources */,
 				6388B6B31D75A038006BAA97 /* MyLaunchScreen.storyboard in Resources */,
 				636E90B71D5B79F4000A1D02 /* Assets.xcassets in Resources */,
-				6384E2EC1DEE8AB800715BCE /* GoogleService-Info.plist in Resources */,
 				636E90B51D5B79F4000A1D02 /* Main.storyboard in Resources */,
 				63E9F3071D7461BC00DB4233 /* center.png in Resources */,
 			);
@@ -503,19 +502,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FE180F3A5D54059AA2F5EC94 /* 📦 Check Pods Manifest.lock */ = {
+		FE180F3A5D54059AA2F5EC94 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -538,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63BB4D6A1EED7B7100D670DD /* ProgressManager.m in Sources */,
 				636E90B21D5B79F4000A1D02 /* ViewController.m in Sources */,
 				63EC95AF1D6C785A0009B1F7 /* BikeInformation.m in Sources */,
 				6384E2F21DEE915900715BCE /* NSDateNSStringExchange.m in Sources */,
@@ -592,7 +592,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 2FFS45S3SA;
 				INFOPLIST_FILE = myTempMap/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiangJunHuang.twBike.myTempMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -610,7 +610,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 2FFS45S3SA;
 				INFOPLIST_FILE = myTempMap/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiangJunHuang.twBike.myTempMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -658,7 +658,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -700,7 +700,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -720,7 +720,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = twBike/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiangJunHuang.twBike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -740,7 +740,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = twBike/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiangJunHuang.twBike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
