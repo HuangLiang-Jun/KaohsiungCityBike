@@ -16,6 +16,8 @@
 #import "DetectNetworkStatus.h"
 #import "ServerCommunicator.h"
 #import "ProgressManager.h"
+#import "GoogleDirections.h"
+
 
 @interface ViewController ()<MKMapViewDelegate,CLLocationManagerDelegate,MFMailComposeViewControllerDelegate,NetworkConnectionProtocol>
 
@@ -26,6 +28,8 @@
     BikeInformation *info;
     
 }
+
+
 @property (weak, nonatomic) IBOutlet MKMapView *mainMapView;
 @property (nonatomic,strong) NSMutableArray *favorArr;
 @property (nonatomic,strong) NSMutableArray *bikeInfoArr;
@@ -54,6 +58,7 @@
     [locationManager requestWhenInUseAuthorization];
     //我期待的精確度
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    
     //請告訴蘋果這個app是基於什麼樣的活動
     locationManager.activityType = CLActivityTypeAutomotiveNavigation;
     locationManager.delegate = self;
@@ -164,6 +169,18 @@
 
 -(void)mapView:(MKMapView *)mapView didSelectAnnotationView:(nonnull MKAnnotationView *)view{
     
+    NSString *userLatStr = [NSString stringWithFormat:@"%f",mapView.userLocation.location.coordinate.latitude];
+    NSString *userLonStr = [NSString stringWithFormat:@"%f",mapView.userLocation.location.coordinate.longitude];
+    
+    NSString *stattionLat = [NSString stringWithFormat:@"%f",view.annotation.coordinate.latitude];
+    NSString *stattionLon = [NSString stringWithFormat:@"%f",view.annotation.coordinate.longitude];
+    
+    
+    GoogleDirections *direction = [GoogleDirections new];
+    [direction enterPositionWithOriginLat:userLatStr lon:userLonStr destinationLat:stattionLat lon:stattionLon doneHandle:^(NSData *data, NSError *error) {
+        
+    }];
+    
 }
 
 
@@ -171,7 +188,9 @@
 #pragma mark - myLoactionBtn
 //定位按鈕！
 - (IBAction)myLocationBtn:(id)sender {
+
     _mainMapView.userTrackingMode = MKUserTrackingModeFollow;
+
 }
 
 #pragma mark  - about alert & send mail

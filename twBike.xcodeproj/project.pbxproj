@@ -14,6 +14,7 @@
 		632C0D1D1DA7C3C100463D92 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632C0D1C1DA7C3C100463D92 /* TodayViewController.m */; };
 		632C0D201DA7C3C100463D92 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632C0D1E1DA7C3C100463D92 /* MainInterface.storyboard */; };
 		632C0D241DA7C3C100463D92 /* myTempMap.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 632C0D171DA7C3C100463D92 /* myTempMap.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63508B4F1EF407AA00741D31 /* GoogleDirections.m in Sources */ = {isa = PBXBuildFile; fileRef = 63508B4E1EF407AA00741D31 /* GoogleDirections.m */; };
 		636E90AC1D5B79F4000A1D02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E90AB1D5B79F4000A1D02 /* main.m */; };
 		636E90AF1D5B79F4000A1D02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E90AE1D5B79F4000A1D02 /* AppDelegate.m */; };
 		636E90B21D5B79F4000A1D02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636E90B11D5B79F4000A1D02 /* ViewController.m */; };
@@ -81,6 +82,8 @@
 		632C0D1C1DA7C3C100463D92 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
 		632C0D1F1DA7C3C100463D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		632C0D211DA7C3C100463D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63508B4D1EF407AA00741D31 /* GoogleDirections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleDirections.h; sourceTree = "<group>"; };
+		63508B4E1EF407AA00741D31 /* GoogleDirections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleDirections.m; sourceTree = "<group>"; };
 		636E90A71D5B79F4000A1D02 /* twBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = twBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		636E90AB1D5B79F4000A1D02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		636E90AD1D5B79F4000A1D02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 				63EC95AB1D6C464E0009B1F7 /* XMLParserDelegate.m */,
 				63BB4D681EED7B7100D670DD /* ProgressManager.h */,
 				63BB4D691EED7B7100D670DD /* ProgressManager.m */,
+				63508B4D1EF407AA00741D31 /* GoogleDirections.h */,
+				63508B4E1EF407AA00741D31 /* GoogleDirections.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -540,6 +545,7 @@
 				63BB4D6A1EED7B7100D670DD /* ProgressManager.m in Sources */,
 				636E90B21D5B79F4000A1D02 /* ViewController.m in Sources */,
 				63EC95AF1D6C785A0009B1F7 /* BikeInformation.m in Sources */,
+				63508B4F1EF407AA00741D31 /* GoogleDirections.m in Sources */,
 				6384E2F21DEE915900715BCE /* NSDateNSStringExchange.m in Sources */,
 				636E90AF1D5B79F4000A1D02 /* AppDelegate.m in Sources */,
 				63E9F2E91D7425AD00DB4233 /* DetailViewController.m in Sources */,
