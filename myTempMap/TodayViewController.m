@@ -113,7 +113,6 @@
 -(void) calculateUserAndStationsDistance{
     NSMutableDictionary *itemDict = [NSMutableDictionary new];
     
-    NSLog(@"stationcount:%lu",stationArr.count);
     for (int i = 0; i < stationArr.count; i++) {
         bikeItem = stationArr[i];
         stationLocation = [[CLLocation alloc]initWithLatitude:[bikeItem.stationLat doubleValue] longitude:[bikeItem.stationLon doubleValue]];

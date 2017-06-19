@@ -1,12 +1,19 @@
 PODS:
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
   - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - SVProgressHUD
 
 SPEC CHECKSUMS:
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: abb3115b6079485eeb47e5ae18aedb0e5a5f7cb0
+PODFILE CHECKSUM: 42860f7569b64f273f46b958ee3721ffbbaefd3b
 
 COCOAPODS: 1.2.0

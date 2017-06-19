@@ -339,6 +339,7 @@
 				632C0D281DA7C3C100463D92 /* Embed App Extensions */,
 				F58A3FBC9949F9259A0FA24E /* 📦 Embed Pods Frameworks */,
 				5CBD89C85A19FF870D2380F2 /* 📦 Copy Pods Resources */,
+				638015331EF75E37003024E5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -431,6 +432,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-twBike/Pods-twBike-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		638015331EF75E37003024E5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" f4f865d5cf3dfd1a332a3adf04fbcde2a460cf02 d7139d2dc2783e4195a09013c5d72ad63135205dc8c5cafbf42854ec41c269ba";
 		};
 		7C268A56A2CB589389C75F7C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -17,8 +17,15 @@ NSString *fullUrlStr = @"https://maps.googleapis.com/maps/api/directions/json?or
 
 - (void) enterPositionWithOriginLat:(NSString *)lat lon:(NSString *)lon destinationLat:(NSString *)lat2 lon:(NSString *)lon2 doneHandle:(Completion)completion {
 
-    
-    NSString *fullUrlStr = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/directions/json?origin=%@,%@&destination=%@,%@&key=AIzaSyDjY13yGQExPbOb3RJucafS5NTc4VN6KJ4",lat,lon,lat2,lon2];
+   
+    /*
+     *
+     * origin: 起點
+     * destination: 終點
+     * mode: 交通方式
+     *
+     */
+    NSString *fullUrlStr = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/directions/json?origin=%@,%@&destination=%@,%@&mode=walking&key=AIzaSyDjY13yGQExPbOb3RJucafS5NTc4VN6KJ4",lat,lon,lat2,lon2];
     
     NSURL *url = [[NSURL alloc]  initWithString:fullUrlStr];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc]init];

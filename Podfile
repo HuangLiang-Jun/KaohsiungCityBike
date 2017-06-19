@@ -9,6 +9,7 @@ target 'twBike' do
   # Pods for twBike
 
 pod 'SVProgressHUD'
-
+pod 'Fabric'
+pod 'Crashlytics'
 
 end
